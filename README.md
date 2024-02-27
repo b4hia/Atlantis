@@ -3,11 +3,12 @@
 
 <h1> 🏄‍♂️ Sistema de Gerenciamento para Parques Aquáticos 🌊 </h1> 
 
+</div>
 
 > [!IMPORTANT]
 > This project are developed from the subject: Programming Techniques 2.
 
-
+<div align="center" id=topo>
 <p>
     <a href="req">Requisitos do Sistema</a> | 
     <a href="#atividades1">Part1</a> | 
