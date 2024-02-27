@@ -1,7 +1,7 @@
 
 <div align="center" id=topo>
 
-<h1> 🏄‍♂️ Sistema de Gerenciamento para Parques Aquáticos 🌊 </h1> 
+<h1> 🏄‍♂️ Sistema de Gestão para Parques Aquáticos 🌊 </h1> 
 
 </div>
 
