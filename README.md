@@ -58,7 +58,7 @@ Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as 
 <br>
 
 > 🔗 **Link** <br>
-> - Support documento for the atividade1: [Click to view](https://github.com/b4hia/PetLovers-PL/tree/main/documents/atvi-atl.pdf)
+> - Support documento for the atividade1: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/atvi-atl.pdf)
     
 <br>
   
