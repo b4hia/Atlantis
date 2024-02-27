@@ -80,8 +80,8 @@ Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as 
 
  #### Épicos (Requisitos Funcionais) 
 
-- [ ] not defined.
-- [ ] not defined.
+- [ ] [Adicionar Dados do Cliente](https://github.com/b4hia/Atlantis/issues/1)
+- [ ] [Adicionar Dados do Dependente](https://github.com/b4hia/Atlantis/issues/2)
 - [ ] not defined.
 
 <br>
