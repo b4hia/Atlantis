@@ -88,7 +88,7 @@ responsible, the dependent's address and telephone data must be the same as the 
 
  #### Epics (Functional Requirements) 
 
-- [ ] [Add Customer Data](https://github.com/b4hia/Atlantis/issues/1)
+- [x] [Add Customer Data](https://github.com/b4hia/Atlantis/issues/1)
 - [ ] [Add Dependent Data](https://github.com/b4hia/Atlantis/issues/2)
 - [ ] not defined.
 
