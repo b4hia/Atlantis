@@ -1,7 +1,8 @@
 
 <div align="center" id=topo>
 
-<h1> 🏄‍♂️ Sistema de Gestão para Parques Aquáticos 🌊 </h1> 
+<h1> 🏄‍♂️ Management System for Water Parks 🌊 </h1> 
+<h6>Sistema de Gestão para Parques Aquáticos</h6>
 
 </div>
 
@@ -10,7 +11,7 @@
 
 <div align="center" id=topo>
 <p>
-    <a href="req">Requisitos do Sistema</a> | 
+    <a href="req">System Requirements</a> | 
     <a href="#atividades1">Part1</a> | 
     <a href="#atividades2">Part2</a> | 
     <a href="#atividades3">Part3</a> | 
@@ -25,15 +26,15 @@
 
 <span id="req">
   
-## 📚 Requisitos
+## 📚 What you will Need
 
-Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as seguintes tecnologias:
+For the system to run and be used effectively, the following technologies must be installed:
 
 1. Git:
-  - Você precisará do Git instalado para poder fazer a clonagem deste repositório: [Clique aqui para instalar o Git](https://git-scm.com/downloads) 
+  - You will need Git installed to be able to clone this repository: [Click here to install Git](https://git-scm.com/downloads) 
 
 2. NodeJS:
-  - No momento em que for instalar o Node, escolha a versão "LTS"; [Clique aqui para instalar o Node](https://nodejs.org/en)
+  - When installing Node, choose the "LTS" version; [Click here to install Node](https://nodejs.org/en)
 
 
 
@@ -43,7 +44,7 @@ Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as 
 
 <span id="atividades1">
 
-## Part1 *Sistema CLI* 1️⃣
+## Part1 *CLI Sistem* 1️⃣
 <p>
     <a href="#tec">Tecnologies</a> | 
     <a href="#backlog">Backlog</a> | 
@@ -51,8 +52,15 @@ Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as 
 </p>
 
 ## :pushpin: About the Chalenge
- Você é um empreendedor e também é um engenheiro de software formidável. Ao unir suas habilidades, junto com as informações sobre o crescimento do comercio eletrônico de produtos para pets e pet shops, você decidiu criar uma empresa especializada no desenvolvimento de sistemas para gerenciamento de lojas nestes segmentos. 
- Assim surgiu a tua empresa, a Computer4Pet (C4P). O objetivo da C4P é desenvolver sistemas para atender, lojas de comercio eletrônico, pet shops e clínicas veterinárias em geral. O primeiro projeto que recebeu investimento foi um sistema do tipo CLI (Command-Line Interface). O sistema foi batizado como PetLovers (PL). O PL foi pensando para gerenciar pet shops e/ou clínicas veterinárias. A primeira versão do software foi desenvolvida por uma “software house” – empresa especializada no desenvolvimento de software por encomenda. Contudo, infelizmente a empresa não fez um bom trabalho. Agora resta a você terminar o serviço e evitar um prejuízo maior.
+You are an entrepreneur, very attentive to market trends and have noticed the growing
+water parks. There is plenty of software available to assist business owners or groups in
+managing your business, but most are too expensive and have limitations. So you decided
+create a company, with new ideas and better proposals, Ocean Solutions. After much thought, debate and listening
+its consultants, it was decided to develop a new system, called Atlantis, a tribute to the city of Atlantis.
+Atlantis' first proposal is that it be a generalist system, to manage water parks, clubs and hotels. Therefore,
+It was decided to create a first module for it, one that would be used to register clients and their dependents. As every dependent has a
+responsible, the dependent's address and telephone data must be the same as the responsible person's data.
+
 
  
 <br>
@@ -64,7 +72,7 @@ Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as 
   
 <span id="tec">
 
-## 🔌 Tecnologias Utilizadas
+## 🔌 Technologies Used
 
 <div align="center">
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
@@ -76,12 +84,12 @@ Para que a execução do sistema e seu uso sejam efetivados, tenha instalado as 
 
 <span id="backlog">
 
-## 🌱 Backlog do Produto *Atividade1*
+## 🌱 Product Backlog *Atividade1*
 
- #### Épicos (Requisitos Funcionais) 
+ #### Epics (Functional Requirements) 
 
-- [ ] [Adicionar Dados do Cliente](https://github.com/b4hia/Atlantis/issues/1)
-- [ ] [Adicionar Dados do Dependente](https://github.com/b4hia/Atlantis/issues/2)
+- [ ] [Add Customer Data](https://github.com/b4hia/Atlantis/issues/1)
+- [ ] [Add Dependent Data](https://github.com/b4hia/Atlantis/issues/2)
 - [ ] not defined.
 
 <br>
