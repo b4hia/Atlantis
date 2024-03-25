@@ -1,35 +1,39 @@
-
 import Cadastro from "./cadastro/cadastro";
 import Entrada from "./teste/entrada";
+import CadastrarDependente from "./cadastro/cadastroDependente";
+import Cliente from "./modelos/cliente";
+
+let entrada = new Entrada();
+let cadastro = new Cadastro();
+let cadastrarDependente = new CadastrarDependente();
 
 
-let entrada = new Entrada
-let cadastrarCliente = new Cadastro
 
 while (true) {
-    console.log("Bem vindo à Atlantis!")
-    console.log("---- MENU ----")
+    console.log("\n░█████╗░████████╗██╗░░░░░░█████╗░███╗░░██╗████████╗██╗░██████╗\n██╔══██╗╚══██╔══╝██║░░░░░██╔══██╗████╗░██║╚══██╔══╝██║██╔════╝\n███████║░░░██║░░░██║░░░░░███████║██╔██╗██║░░░██║░░░██║╚█████╗\n██╔══██║░░░██║░░░██║░░░░░██╔══██║██║╚████║░░░██║░░░██║░╚═══██╗\n██║░░██║░░░██║░░░███████╗██║░░██║██║░╚███║░░░██║░░░██║██████╔╝")
+    console.log("--------------------------------------------------------------\n")
+    console.log("---------------------------- MENU ----------------------------")
     console.log("1 - Cadastrar Cliente")
     console.log("0 - Sair")
 
-    let cadastrar = entrada.receberNumero("Digite uma opção: ")
-    switch (cadastrar) {
+    let opcao = entrada.receberNumero("Digite uma opção: ");
+    
+    switch (opcao) {
         case 1: {
-            let cli = cadastrarCliente.cadastrarCliente()
-            console.dir(cli, { depth: null })
+            let titular = cadastro.cadastrarCliente();
+            console.dir(titular, { depth: null });
             break;
         }
 
         case 0: {
-            console.log("Até a próxima.")
+            console.log("Até a próxima.");
             break;
-
         }
 
         default: {
-            console.log("Opção invalida, digite novamente")
+            console.log("Opção inválida, digite novamente.");
+            break;
         }
     }
-    break;
-
 }
+

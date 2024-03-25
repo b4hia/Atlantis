@@ -1,6 +1,6 @@
 import Prototipo from "../interfaces/prototipo"
 
-export default class Endereco implements Prototipo {
+export default class Endereco implements Prototipo<Endereco> {
     public logradouro: string
     public bairro: string
     public cidade: string
@@ -8,14 +8,14 @@ export default class Endereco implements Prototipo {
     public pais: string
     public codigoPostal: string
 
-    public clonar(): Prototipo {
-        let endereco = new Endereco()
-        endereco.logradouro = this.logradouro
-        endereco.bairro = this.bairro
-        endereco.cidade = this.cidade
-        endereco.estado = this.estado
-        endereco.pais = this.pais
-        endereco.codigoPostal = this.codigoPostal
-        return endereco
+    public clonar(): Endereco {
+        let enderecoClone = new Endereco()
+        enderecoClone.logradouro = this.logradouro
+        enderecoClone.bairro = this.bairro
+        enderecoClone.cidade = this.cidade
+        enderecoClone.estado = this.estado
+        enderecoClone.pais = this.pais
+        enderecoClone.codigoPostal = this.codigoPostal
+        return enderecoClone
     }
 }

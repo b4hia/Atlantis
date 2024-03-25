@@ -1,3 +1,3 @@
-export default interface Prototipo {
-    clonar(): Prototipo
+export default interface Prototipo<T> {
+    clonar(): T
 }
