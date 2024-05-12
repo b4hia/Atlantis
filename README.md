@@ -100,7 +100,7 @@ responsible, the dependent's address and telephone data must be the same as the 
 
 <span id="atividades2">
 
-## Part2 *Singleton and Strategy* 1️⃣
+## Part2 *Singleton and Strategy* 2️⃣
 <p>
     <a href="#tec">Tecnologies</a> | 
     <a href="#backlog">Backlog</a> | 
@@ -129,7 +129,7 @@ system for its first launch.
 <br>
 
 > 🔗 **Link** <br>
-> - Support documento for the atividade1: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/atvii-atl.pdf)
+> - Support documento for the atividade2: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/atvii-atl.pdf)
     
 <br>
   
@@ -147,7 +147,7 @@ system for its first launch.
 
 <span id="backlog">
 
-## 🌱 Product Backlog *Atividade1*
+## 🌱 Product Backlog *Atividade2*
 
  #### Epics (Functional Requirements) 
 
