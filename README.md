@@ -90,7 +90,67 @@ responsible, the dependent's address and telephone data must be the same as the 
 
 - [x] [Add Customer Data](https://github.com/b4hia/Atlantis/issues/1)
 - [x] [Add Dependent Data](https://github.com/b4hia/Atlantis/issues/2)
-- [ ] not defined.
+
+<br>
+
+
+→ [Back to the top](#topo)
+
+<br>
+
+<span id="atividades2">
+
+## Part1 *Singleton and Strategy* 1️⃣
+<p>
+    <a href="#tec">Tecnologies</a> | 
+    <a href="#backlog">Backlog</a> | 
+    <a href="#manual">User Manual</a> 
+</p>
+
+## :pushpin: About the Chalenge
+The new version, delivered by the development team, remains a CLI-type system,
+just like the previous version. In this system there is no communication with any DBMS, therefore,
+a class was used to store information while the system runs, such as
+an in-memory database. This class was called “Warehouse”. This class
+implements the Singleton pattern, so it has the private constructor method. The decision to
+using Singleton came from one of its software engineers and, for now, it will be the main
+way of storing data in the system during its execution.
+The system has started to “take shape” and is very close to its first stable version,
+ready to be presented to future customers and put into production. However, not yet
+good enough for an MVP. According to the initial idea, when you thought of
+founding the company, some features are mandatory and have not yet been implemented.
+The objective now is to implement the mandatory features for the first MVP, maintaining
+the application of already used standards and, if necessary, including new standards that you
+consider important for the system. You are responsible for this part and for preparing the
+system for its first launch.
+
+
+ 
+<br>
+
+> 🔗 **Link** <br>
+> - Support documento for the atividade1: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/atvii-atl.pdf)
+    
+<br>
+  
+<span id="tec">
+
+## 🔌 Technologies Used
+
+<div align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+</div>
+
+<br>
+
+<span id="backlog">
+
+## 🌱 Product Backlog *Atividade1*
+
+ #### Epics (Functional Requirements) 
+
 
 <br>
 
