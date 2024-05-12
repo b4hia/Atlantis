@@ -100,7 +100,7 @@ responsible, the dependent's address and telephone data must be the same as the 
 
 <span id="atividades2">
 
-## Part1 *Singleton and Strategy* 1️⃣
+## Part2 *Singleton and Strategy* 1️⃣
 <p>
     <a href="#tec">Tecnologies</a> | 
     <a href="#backlog">Backlog</a> | 
