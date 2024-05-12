@@ -74,9 +74,11 @@ export default class Cadastro {
             let cadastroTel = entrada.receberNumero("\nDeseja cadastrar mais telefones?\n1 - Sim\n0 - Não\n")
             if (cadastroTel == 0) { break }
         }
-        cli.dependentes = dep.cadastrar(cli)
         cli.telefones = listTel
         cli.documentos = listDoc
+
+        cli.dependentes = dep.cadastrar(cli)
+        
         return cli
     }    
 }

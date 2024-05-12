@@ -5,11 +5,11 @@ import Cliente from "./modelos/cliente";
 
 let entrada = new Entrada();
 let cadastro = new Cadastro();
-let cadastrarDependente = new CadastrarDependente();
 
 
+let seção = true;
 
-while (true) {
+while (seção) {
     console.log("\n░█████╗░████████╗██╗░░░░░░█████╗░███╗░░██╗████████╗██╗░██████╗\n██╔══██╗╚══██╔══╝██║░░░░░██╔══██╗████╗░██║╚══██╔══╝██║██╔════╝\n███████║░░░██║░░░██║░░░░░███████║██╔██╗██║░░░██║░░░██║╚█████╗\n██╔══██║░░░██║░░░██║░░░░░██╔══██║██║╚████║░░░██║░░░██║░╚═══██╗\n██║░░██║░░░██║░░░███████╗██║░░██║██║░╚███║░░░██║░░░██║██████╔╝")
     console.log("--------------------------------------------------------------\n")
     console.log("---------------------------- MENU ----------------------------")
@@ -27,6 +27,7 @@ while (true) {
 
         case 0: {
             console.log("Até a próxima.");
+            seção = false;
             break;
         }
 
