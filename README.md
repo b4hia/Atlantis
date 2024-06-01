@@ -151,7 +151,7 @@ system for its first launch.
 
  #### Epics (Functional Requirements) 
 
-- [ ] [Features developed](https://github.com/b4hia/Atlantis/issues/4)
+- [x] [Features developed](https://github.com/b4hia/Atlantis/issues/4)
 
 <br>
 
