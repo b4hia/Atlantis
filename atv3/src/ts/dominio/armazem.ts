@@ -1,8 +1,10 @@
+import Acomodacao from "../modelos/acomodacao";
 import Cliente from "../modelos/cliente";
 
 export default class Armazem {
     private static instanciaUnica: Armazem = new Armazem()
     private clientes: Cliente[] = []
+    private acomodacoes: Acomodacao[] = []
     private cliente_id: number = 0;// Contador para saber os ids dos clientes
     private constructor() { }
 
@@ -20,6 +22,9 @@ export default class Armazem {
     }
     public get ClienteId():number {
         return this.CliId
+    }
+    public get Acomodacoes(){
+        return this.acomodacoes
     }
 
     public gerarID(): number { // Gera um id para o cliente
