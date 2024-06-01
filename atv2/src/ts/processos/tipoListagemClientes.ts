@@ -1,6 +1,8 @@
 import Processo from "../abstracoes/processo";
 import MenuTipoListagemClientes from "../menus/menuTipoListagemClientes";
+import ListagemDependente from "./listagemDependente";
 import ListagemDependentes from "./listagemDependentes";
+import ListagemTitular from "./listagemTitular";
 import ListagemTitulares from "./listagemTitulares";
 
 export default class TipoListagemClientes extends Processo {
@@ -13,11 +15,20 @@ export default class TipoListagemClientes extends Processo {
         this.menu.mostrar()
         this.opcao = this.entrada.receberNumero('Qual a opção desejada?')
         switch (this.opcao) {
+            case 1:
+                let titid = this.entrada.receberNumero('Qual o ID do titular?')
+                this.processo = new ListagemTitular()
+                this.processo.processar(titid)
+                break;
             case 2:
                 this.processo = new ListagemTitulares()
                 this.processo.processar()
                 break;
-
+            case 5:
+                let depid = this.entrada.receberNumero('Qual o ID do dependente?')
+                this.processo = new ListagemDependente()
+                this.processo.processar(depid)
+                break;
             case 6:
                 this.processo = new ListagemDependentes()
                 this.processo.processar()
