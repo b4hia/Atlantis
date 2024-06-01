@@ -3,6 +3,7 @@ import { NomeAcomadacao } from "../enumeracoes/NomeAcomadacao"
 
 export default class Acomodacao {
     private nomeAcomadacao: NomeAcomadacao
+    private disponivel: Boolean
     private camaSolteiro: Number
     private camaCasal: Number
     private suite: Number
@@ -15,6 +16,7 @@ export default class Acomodacao {
         suite: Number, climatizacao: Boolean, garagem: Number, identificador: IdentificadorAcomodação, numeroQuarto: Number) {
         this.nomeAcomadacao = nomeAcomadacao
         this.camaSolteiro = camaSolteiro
+        this.disponivel = true;
         this.camaCasal = camaCasal
         this.suite = suite
         this.climatizacao = climatizacao
@@ -25,6 +27,7 @@ export default class Acomodacao {
     }
 
     public get NomeAcomadacao() { return this.nomeAcomadacao }
+    public get Disponivel() { return this.disponivel; }
     public get CamaSolteiro() { return this.camaSolteiro }
     public get CamaCasal() { return this.camaCasal }
     public get Suite() { return this.suite }
@@ -32,5 +35,7 @@ export default class Acomodacao {
     public get Garagem() { return this.garagem }
     public get Identificador() { return this.identificador }
     public get NumeroQuarto() { return this.numeroQuarto }
+
+    public set setDisponivel(disponivel: boolean) { this.disponivel = disponivel; }
 
 }

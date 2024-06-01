@@ -1,9 +1,11 @@
 import Documento from "./documento"
 import Endereco from "./endereco"
 import Telefone from "./telefone"
+import Acomodacao from "./acomodacao"
 
 export default class Cliente {
     private id: number
+    private acomodacao?: Acomodacao;
     private nome: string
     private nomeSocial: string
     private dataNascimento: Date
@@ -24,6 +26,7 @@ export default class Cliente {
 
     public get Nome() { return this.nome }
     public get Id() { return this.id }
+    public get Acomodacao() { return this.acomodacao; }
     public get NomeSocial() { return this.nomeSocial }
     public get DataNascimento() { return this.dataNascimento }
     public get DataCadastro() { return this.dataCadastro }
@@ -34,6 +37,7 @@ export default class Cliente {
     public get Titular() { return this.titular }
 
     public set setNome(nome: string) { this.nome = nome }
+    public set setAcomodacao(acomodacao: Acomodacao) { this.acomodacao = acomodacao }
     public set setNomeSocial(nomeSocial: string) { this.nomeSocial = nomeSocial }
     public set setDataNascimento(dataNascimento: Date) { this.dataNascimento = dataNascimento }
     public set setEndereco(endereco: Endereco) { this.endereco = endereco }
