@@ -13,7 +13,7 @@ export default class CadastroClienteTitular extends Processo {
         let nome = this.entrada.receberTexto('Qual o nome do novo cliente?')
         let nomeSocial = this.entrada.receberTexto('Qual o nome social do novo cliente?')
         let dataNascimento = this.entrada.receberData('Qual a data de nascimento?')
-        let id = armazem.CliId + 1
+        let id = armazem.gerarID()
         let cliente = new Cliente(id, nome, nomeSocial, dataNascimento)
 
         this,this.processo = new CadastroTelefone(cliente)

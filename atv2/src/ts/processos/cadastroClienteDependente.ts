@@ -12,7 +12,7 @@ export default class CadastroClienteDependente extends Processo {
     }
     processar(): void {
         let armazem = Armazem.InstanciaUnica
-        let dep_id = armazem.ClienteId + 1
+        let dep_id = armazem.gerarID()
         let clone = new Clonador
 
         console.log('Iniciando o cadastro de um novo dependente...')
@@ -48,6 +48,6 @@ export default class CadastroClienteDependente extends Processo {
         armazem.Clientes.push(clienteDependente)
         armazem.ClienteId = dep_id
 
-        console.log(`Finalizando o cadastro do dependente... ID: ${dep_id}!`)
+        console.log(`Finalizando o cadastro do dependente... seu ID é: ${dep_id}!`)
     }
 }
