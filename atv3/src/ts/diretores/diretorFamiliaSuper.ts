@@ -5,7 +5,7 @@ import Diretor from "../abstracoes/diretor";
 import { IdentificadorAcomodação } from "../enumeracoes/IdentificadorAcomodação";
 import Armazem from "../dominio/armazem";
 
-export default class DiretorCasalSuper extends Diretor<Acomodacao> {
+export default class DiretorFamiliaSuper extends Diretor<Acomodacao> {
 
     constructor() {
         super()
@@ -16,11 +16,11 @@ export default class DiretorCasalSuper extends Diretor<Acomodacao> {
         let objetoConstrutor = this.construtor as ConstrutorAcomodacao
         objetoConstrutor.NomeAcomodacao = NomeAcomadacao.FamiliaSuper
         objetoConstrutor.Identificador = this.gerarIdentificadorAcomodacaoAleatorio()
-        objetoConstrutor.CamaCasal = 1
-        objetoConstrutor.CamaSolteiro = 0
+        objetoConstrutor.CamaCasal = 2
+        objetoConstrutor.CamaSolteiro = 6
         objetoConstrutor.Climatizacao = true
-        objetoConstrutor.Garagem = 1
-        objetoConstrutor.Suite = 1
+        objetoConstrutor.Garagem = 2
+        objetoConstrutor.Suite = 3
         objetoConstrutor.NumeroQuarto = this.armazem.gerarNumeroAcomodacao();
         return objetoConstrutor.construir()
     }

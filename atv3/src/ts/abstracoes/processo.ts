@@ -10,5 +10,5 @@ export default abstract class Processo {
     public get Execucao(){
         return this.execucao
     }
-    abstract processar(id?: number): void // Método processar precisa receber um id ou não
+    abstract processar(id?: number, numero?: number): void // Método processar precisa receber um id ou não
 }

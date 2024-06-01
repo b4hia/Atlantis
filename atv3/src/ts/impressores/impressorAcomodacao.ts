@@ -13,6 +13,8 @@ export default class ImpressorAcomodacao implements Impressor {
             + `-- Climatização: ${this.converterBooleano(this.acomodacao.Climatizacao)}\n`
             + `-- Quantidade de garagens disponíveis: ${this.acomodacao.Garagem}\n`
             + `-- Quantidade de suites: ${this.acomodacao.Suite}\n`
+            + `-- Sua Acomodação está localizada no Setor: ${this.acomodacao.Identificador}\n`
+            + `-- O numero da Acomodação é: ${this.acomodacao.NumeroQuarto}\n`
         return descricao
     }
 

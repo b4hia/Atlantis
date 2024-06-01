@@ -1,8 +1,13 @@
 import Processo from "../abstracoes/processo"
 import MenuPrincipal from "../menus/menuPricipal"
+import AlugarAcomodação from "./AlugarAcomodação"
+import CadastroAcomodacoes from "./cadastroAcomodacaoSolteiroSimples"
+import DeletarAcomodação from "./deletarAcomodação"
 import DeletarCliente from "./deletarCliente"
 import TipoAtualizadorClientes from "./tipoAtualizarCliente"
+import TipoCadastroAcomodação from "./tipoCadastroAcomodação"
 import TipoCadastroCliente from "./tipoCadastroCliente"
+import TipoListagemAcomodações from "./tipoListagemAcomodações"
 import TipoListagemClientes from "./tipoListagemClientes"
 
 export default class Principal extends Processo {
@@ -31,6 +36,25 @@ export default class Principal extends Processo {
                 let id = this.entrada.receberNumero('Qual o ID do cliente que deseja excluir?')
                 this.processo = new DeletarCliente()
                 this.processo.processar(id)
+                break
+            case 5:
+                let cli = this.entrada.receberNumero('Qual o ID do cliente que deseja alugar uma acomodação?')
+                let quarto = this.entrada.receberNumero('Qual o número do quarto que deseja alugar?')
+                this.processo = new AlugarAcomodação()
+                this.processo.processar(cli, quarto)
+                break
+            case 6:
+                this.processo = new TipoCadastroAcomodação()
+                this.processo.processar()
+                break
+            case 7:
+                this.processo = new TipoListagemAcomodações()
+                this.processo.processar()
+                break
+            case 8:
+                let numero = this.entrada.receberNumero('Qual o numero do quarto que deseja excluir?')
+                this.processo = new DeletarAcomodação()
+                this.processo.processar(numero)
                 break
             case 0:
                 this.execucao = false

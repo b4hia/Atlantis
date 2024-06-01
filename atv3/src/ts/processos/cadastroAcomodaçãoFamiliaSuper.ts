@@ -1,16 +1,18 @@
 import Processo from "../abstracoes/processo";
-import DiretorSolteiroSimples from "../diretores/diretorSolteiroSimples";
+import DiretorFamiliaSimples from "../diretores/diretorFamiliaSimples";
+import DiretorFamiliaSuper from "../diretores/diretorFamiliaSuper";
 import Armazem from "../dominio/armazem";
 import Acomodacao from "../modelos/acomodacao";
 
-export default class CadastroAcomodacoes extends Processo {
+export default class CadastroAcomodacaoFamiliaSuper extends Processo {
     private acomodacoes: Acomodacao[]
     constructor() {
         super()
         this.acomodacoes = Armazem.InstanciaUnica.Acomodacoes
     }
     processar(): void {
-        let diretor = new DiretorSolteiroSimples()
+        let diretor = new DiretorFamiliaSuper()
         this.acomodacoes.push(diretor.construir())
+        console.log(`Finalizando o cadastro da acomodação familia super!`)
     }
 }

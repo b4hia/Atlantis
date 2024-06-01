@@ -17,10 +17,10 @@ export default class DiretorFamiliaMais extends Diretor<Acomodacao> {
         objetoConstrutor.NomeAcomodacao = NomeAcomadacao.FamiliaMais
         objetoConstrutor.Identificador = this.gerarIdentificadorAcomodacaoAleatorio()
         objetoConstrutor.CamaCasal = 1
-        objetoConstrutor.CamaSolteiro = 0
+        objetoConstrutor.CamaSolteiro = 5
         objetoConstrutor.Climatizacao = true
-        objetoConstrutor.Garagem = 1
-        objetoConstrutor.Suite = 1
+        objetoConstrutor.Garagem = 2
+        objetoConstrutor.Suite = 2
         objetoConstrutor.NumeroQuarto = this.armazem.gerarNumeroAcomodacao();
         return objetoConstrutor.construir()
     }

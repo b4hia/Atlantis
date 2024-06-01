@@ -16,10 +16,10 @@ export default class DiretorSolteiroSimples extends Diretor<Acomodacao> {
         let objetoConstrutor = this.construtor as ConstrutorAcomodacao
         objetoConstrutor.NomeAcomodacao = NomeAcomadacao.SolteiroSimples
         objetoConstrutor.Identificador = this.gerarIdentificadorAcomodacaoAleatorio()
-        objetoConstrutor.CamaCasal = 1
-        objetoConstrutor.CamaSolteiro = 0
+        objetoConstrutor.CamaCasal = 0
+        objetoConstrutor.CamaSolteiro = 1
         objetoConstrutor.Climatizacao = true
-        objetoConstrutor.Garagem = 1
+        objetoConstrutor.Garagem = 0
         objetoConstrutor.Suite = 1
         objetoConstrutor.NumeroQuarto = this.armazem.gerarNumeroAcomodacao();
         return objetoConstrutor.construir()

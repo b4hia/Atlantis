@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es2017", "dom"],
+    "moduleResolution": "node",
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Projects */
