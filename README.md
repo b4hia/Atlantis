@@ -268,7 +268,7 @@ An important point, the navigable prototype must include all the functionalities
 
  #### Epics (Functional Requirements) 
 
-- [ ] [Features developed](https://github.com/b4hia/Atlantis/issues/4)
+- [ ] [Features developed](https://github.com/b4hia/Atlantis/issues/6)
 
 <br>
 
