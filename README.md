@@ -37,9 +37,6 @@ For the system to run and be used effectively, the following technologies must b
   - When installing Node, choose the "LTS" version; [Click here to install Node](https://nodejs.org/en)
 
 
-
-
-
 <br>
 
 <span id="atividades1">
@@ -102,8 +99,8 @@ responsible, the dependent's address and telephone data must be the same as the 
 
 ## Part2 *Singleton and Strategy* 2️⃣
 <p>
-    <a href="#tec">Tecnologies</a> | 
-    <a href="#backlog">Backlog</a> | 
+    <a href="#tec2">Tecnologies</a> | 
+    <a href="#backlog2">Backlog</a> | 
     <a href="#manual">User Manual</a> 
 </p>
 
@@ -133,7 +130,7 @@ system for its first launch.
     
 <br>
   
-<span id="tec">
+<span id="tec2">
 
 ## 🔌 Technologies Used
 
@@ -145,7 +142,7 @@ system for its first launch.
 
 <br>
 
-<span id="backlog">
+<span id="backlog2">
 
 ## 🌱 Product Backlog *Atividade2*
 
@@ -159,6 +156,126 @@ system for its first launch.
 → [Back to the top](#topo)
 
 <br>
+
+<span id="atividades3">
+    
+## Part3 *Builder* 3️⃣
+<p>
+    <a href="#tec3">Tecnologies</a> | 
+    <a href="#backlog3">Backlog</a> | 
+    <a href="#manual">User Manual</a> 
+</p>
+
+## :pushpin: About the Chalenge
+The Atlantis system is getting better and better, thanks to the commitment of the development team.
+However, you received two denials, twice two potential clients did not accept your
+software as a minimum viable product for use. This happened because the implementation
+does not include important things, including a form of registration and management of
+accommodations.
+Its software engineers started updates and one of the main differences was
+include a class called “Accommodations”. This class was designed to represent
+any type of accommodation in a hotel, inn or resort.
+You were responsible for finishing the classes that create the other types of accommodation and for
+design and develop hosting control in the software. Hosting control
+consists of recording which guests are currently staying at the hotel, inn or
+resort. Furthermore, what type of accommodation are these guests staying in?
+
+ 
+<br>
+
+> 🔗 **Link** <br>
+> - Support documento for the atividade3: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/atviii-atl.pdf)
+    
+<br>
+  
+<span id="tec3">
+
+## 🔌 Technologies Used
+
+<div align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+</div>
+
+<br>
+
+<span id="backlog3">
+
+## 🌱 Product Backlog *Atividade3*
+
+ #### Epics (Functional Requirements) 
+
+- [ ] [Features developed](https://github.com/b4hia/Atlantis/issues/4)
+
+<br>
+
+
+→ [Back to the top](#topo)
+
+<br>
+
+<span id="atividades4">
+    
+## Part4 *SPA Application* 4️⃣
+<p>
+    <a href="#tec4">Tecnologies</a> | 
+    <a href="#backlog4">Backlog</a> | 
+    <a href="#manual">User Manual</a> 
+</p>
+
+## :pushpin: About the Chalenge
+Finally, the Atlantis system was commercialized and its results were very good. However, you
+received important information, a report from the marketing and sales team. This one
+report pointed out that CLI (Command-line interface) type systems generally become
+obsolete quickly. Furthermore, CLI-type systems are not compatible with perception
+human communication.
+You are the most interested in the success of the system, after all, you are the owner of the company, the
+entrepreneur who thought about investing in this market of hotels, inns and resorts. Therefore,
+you have taken on the task of creating the system's graphical interface. You decided this because you want
+that the system has an interface compatible with your entrepreneurial style.
+So, you have decided to develop an interface for a
+Single Page Application (SPA) type application. SPAs are applications whose functionality is
+concentrated on a single page.
+The goal now is to build a navigable prototype for the future SPA application. This interface needs to be user-friendly, with great usability.
+An important point, the navigable prototype must include all the functionalities that already exist in the CLI system, such as CRUD for customers (guests), accommodation registration and accommodation registration
+ 
+<br>
+
+> 🔗 **Link** <br>
+> - Support documento for the atividade4: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/ativ-atl.pdf)
+    
+<br>
+  
+<span id="tec4">
+
+## 🔌 Technologies Used
+
+<div align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-007ACC?style=for-the-badge&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bulma-007ACC?style=for-the-badge&logo=bulma&logoColor=white"/>
+
+</div>
+
+<br>
+
+<span id="backlog4">
+
+## 🌱 Product Backlog *Atividade4*
+
+ #### Epics (Functional Requirements) 
+
+- [ ] [Features developed](https://github.com/b4hia/Atlantis/issues/4)
+
+<br>
+
+→ [Back to the top](#topo)
+
+<br>
+
 
 <span id="manual">
 
