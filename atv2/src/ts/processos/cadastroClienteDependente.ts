@@ -47,5 +47,7 @@ export default class CadastroClienteDependente extends Processo {
 
         armazem.Clientes.push(clienteDependente)
         armazem.ClienteId = dep_id
+
+        console.log(`Finalizando o cadastro do dependente... ID: ${dep_id}!`)
     }
 }
