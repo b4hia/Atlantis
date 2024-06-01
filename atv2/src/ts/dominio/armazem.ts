@@ -26,4 +26,7 @@ export default class Armazem {
         this.cliente_id += 1;
         return this.cliente_id;
     }
+    public atualizarClientes(clientes: Cliente[]): void { //recebe lista de clientes e atualiza a lista atual
+        this.clientes = clientes
+    }
 }

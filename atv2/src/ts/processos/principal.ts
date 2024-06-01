@@ -1,5 +1,6 @@
 import Processo from "../abstracoes/processo"
 import MenuPrincipal from "../menus/menuPricipal"
+import DeletarCliente from "./deletarCliente"
 import TipoAtualizadorClientes from "./tipoAtualizarCliente"
 import TipoCadastroCliente from "./tipoCadastroCliente"
 import TipoListagemClientes from "./tipoListagemClientes"
@@ -26,10 +27,11 @@ export default class Principal extends Processo {
                 this.processo = new TipoListagemClientes()
                 this.processo.processar()
                 break
-            // case 4:
-            //     this.processo = new DeletarCliente()
-            //     this.processo.processar()
-            //     break
+            case 4:
+                let id = this.entrada.receberNumero('Qual o ID do cliente que deseja excluir?')
+                this.processo = new DeletarCliente()
+                this.processo.processar(id)
+                break
             case 0:
                 this.execucao = false
                 console.log('Até logo!')
