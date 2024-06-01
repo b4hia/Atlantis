@@ -2,6 +2,7 @@ import Processo from "../abstracoes/processo";
 import MenuTipoListagemClientes from "../menus/menuTipoListagemClientes";
 import ListagemDependente from "./listagemDependente";
 import ListagemDependentes from "./listagemDependentes";
+import ListagemDependentesDoTitular from "./listagemdependentesdotitular";
 import ListagemTitular from "./listagemTitular";
 import ListagemTitulares from "./listagemTitulares";
 
@@ -23,6 +24,11 @@ export default class TipoListagemClientes extends Processo {
             case 2:
                 this.processo = new ListagemTitulares()
                 this.processo.processar()
+                break;
+            case 3:
+                let id = this.entrada.receberNumero('Qual o ID do titular?')
+                this.processo = new ListagemDependentesDoTitular()
+                this.processo.processar(id)
                 break;
             case 5:
                 let depid = this.entrada.receberNumero('Qual o ID do dependente?')
