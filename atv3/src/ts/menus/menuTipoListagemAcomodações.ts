@@ -9,6 +9,7 @@ export default class MenuTipoListagemAcomodações implements Menu {
         console.log(`| 1 - Listar acomodações que estão disponíveis`)
         console.log(`| 2 - Listar acomodação especifica`)
         console.log(`| 3 - Todos as acomodações`)
+        console.log(`| 4 - Acomodações ocupadas`)
         console.log(`----------------------`)
     }
 }

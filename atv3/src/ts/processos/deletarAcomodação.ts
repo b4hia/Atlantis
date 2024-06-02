@@ -1,34 +1,29 @@
 import Processo from "../abstracoes/processo";
 import Armazem from "../dominio/armazem";
-
+import Acomodacao from "../modelos/acomodacao";
 import Cliente from "../modelos/cliente";
-
 export default class DeletarAcomodação extends Processo {
+    private acomodacoes: Acomodacao[]
     private clientes: Cliente[]
     constructor() {
         super()
         this.clientes = Armazem.InstanciaUnica.Clientes
+        this.acomodacoes = Armazem.InstanciaUnica.Acomodacoes
     }
-    processar(id: number): void {
+    processar(numero: number): void {
         console.clear()
-        console.log('Iniciando a exclusão do cliente de ID ' + id + '...')
-        const DeletadorBusca = this.clientes.find(cliente => cliente.Id === id) //bsco o cliente pelo id independente se e titular ou dependente
+        console.log('Iniciando a exclusão da acomodação de numero ' + numero + '...')
+        const DeletadorBusca = this.acomodacoes.find(acomodacao => acomodacao.NumeroQuarto === numero) //bsco o cliente pelo id independente se e titular ou dependente
+        const RemoverCliente = this.clientes.find(cliente => cliente.Acomodacao === DeletadorBusca) //busco o cliente pelo id
         if (DeletadorBusca) {
-            if (this.titular(DeletadorBusca)) { //verifica se o cliente é titular
-                this.clientes = this.clientes.filter(cliente => cliente.Titular?.Id !== id) }//dependentesdo titular tbm
-            this.clientes = this.clientes.filter(cliente => cliente.Id !== id)
-            Armazem.InstanciaUnica.atualizarClientes(this.clientes) // Atualiza a lista de clientes lá no Armazem sem o cliente excluído
-            console.log('Cliente de ID ' + id + ' foi excluído com sucesso.')
+            if (RemoverCliente) {
+                RemoverCliente.setAcomodacao = undefined;
+            }
+            this.acomodacoes = this.acomodacoes.filter(acomodacao => acomodacao.NumeroQuarto !== numero)
+            Armazem.InstanciaUnica.atualizarAcomodacoes(this.acomodacoes) // Atualiza a lista de clientes lá no Armazem sem o cliente excluído
+            console.log('Acomodação de Número: ' + numero + ' foi excluída com sucesso.')
         } else {
-            console.log('Não foi encontrado um cliente com o ID ' + id)
+            console.log('Não foi encontrado um cliente com o ID ' + numero)
         }
-        
-    }
-    private titular(cliente: Cliente): boolean {
-        let verificacao = false
-        if (cliente.Titular == undefined) {
-            verificacao = true
-        }
-        return cliente.Titular == undefined, verificacao
     }
 }

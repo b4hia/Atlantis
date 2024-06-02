@@ -1,10 +1,13 @@
 import Impressor from "../interfaces/impressor";
 import Acomodacao from "../modelos/acomodacao";
+import Cliente from "../modelos/cliente";
 
 export default class ImpressorAcomodacao implements Impressor {
     private acomodacao: Acomodacao
-    constructor(acomodacao: Acomodacao) {
+    private cliente: Cliente | undefined
+    constructor(acomodacao: Acomodacao, cliente?: Cliente) {
         this.acomodacao = acomodacao
+        this.cliente = cliente
     }
     imprimir(): string {
         let descricao = `Nomenclatura: ${this.acomodacao.NomeAcomadacao.toString()}\n`
@@ -15,6 +18,10 @@ export default class ImpressorAcomodacao implements Impressor {
             + `-- Quantidade de suites: ${this.acomodacao.Suite}\n`
             + `-- Sua Acomodação está localizada no Setor: ${this.acomodacao.Identificador}\n`
             + `-- O numero da Acomodação é: ${this.acomodacao.NumeroQuarto}\n`
+            if (this.cliente) {
+                descricao += `-- Cliente: ${this.cliente.Nome}\n`
+                descricao += `-- ID do Cliente: ${this.cliente.Id}\n`
+            }
         return descricao
     }
 

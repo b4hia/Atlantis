@@ -3,6 +3,7 @@ import MenuTipoListagemAcomodações from "../menus/menuTipoListagemAcomodaçõe
 import ListagemAcomodacoes from "./listagemAcomodacoes";
 import ListagemAcomodacao from "./listagemAcomodação";
 import ListagemAcomodacaoLivre from "./listagemAcomodaçãoLivre";
+import ListagemAcomodacaoOcupada from "./listagemAcomodaçãoOcupada";
 
 
 export default class TipoListagemAcomodações extends Processo {
@@ -26,6 +27,10 @@ export default class TipoListagemAcomodações extends Processo {
                 break;
             case 3:
                 this.processo = new ListagemAcomodacoes()
+                this.processo.processar()
+                break;
+            case 4:
+                this.processo = new ListagemAcomodacaoOcupada()
                 this.processo.processar()
                 break;
             default:

@@ -47,4 +47,8 @@ export default class Armazem {
     public atualizarClientes(clientes: Cliente[]): void { //recebe lista de clientes e atualiza a lista atual
         this.clientes = clientes
     }
+
+    public atualizarAcomodacoes(acomodacoes: Acomodacao[]): void { //recebe lista de acomodacoes e atualiza a lista atual
+        this.acomodacoes = acomodacoes
+    }
 }
