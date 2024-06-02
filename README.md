@@ -206,7 +206,7 @@ resort. Furthermore, what type of accommodation are these guests staying in?
 
  #### Epics (Functional Requirements) 
 
-- [ ] [Features developed](https://github.com/b4hia/Atlantis/issues/5)
+- [x] [Features developed](https://github.com/b4hia/Atlantis/issues/5)
 
 <br>
 
