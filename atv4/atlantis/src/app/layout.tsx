@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import { Inter } from "next/font/google";
 import 'bulma/css/bulma.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
