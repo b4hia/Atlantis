@@ -1,109 +1,121 @@
+"use client";
+import React, { useState } from 'react'
 export default function CadastroTitular() {
+    const [nome, setNome] = useState("")
+    const [nomesocial, setNomeSocial] = useState("")
+    const [rg, setRG] = useState("")
+    const [rgdata, setRGemissao] = useState("")
+    const [cpf, setCPF] = useState("")
+    const [cpfdata, setCPFemissao] = useState("")
+    const [mail, setMail] = useState("")
+    const [tel, setTel] = useState("")
+    const [ddd, setDDD] = useState("")
     return (
         <>
-            <section className="container">
+            <form className='container my-6'>
                 <div className="field">
-                    <label className="label is-flex">Nome</label>
-                    <div className="control is-flex">
-                        <input className="input" type="text" placeholder="Digite o nome do cliente" />
-                    </div>
-                </div>
-                <div className="field">
-                    <label className="label is-flex">Nome Social</label>
-                    <div className="control is-flex">
-                        <input className="input" type="text" placeholder="Digite o nome social do cliente" />
-                    </div>
-                </div>
-                <div className="field is-grouped">
-                    <label className="label is-flex">Data de Nascimento</label>
-                    <div className="control is-flex">
-                        <input className="input" type="date" placeholder="Digite a data de nascimento do cliente" />
-                    </div>
-                    <label className="label is-flex">Telefone</label>
-                    <div className="control is-flex">
-                        <input className="input" type="number" placeholder="DDD" />
-                        <input className="input" type="number" placeholder="Digite o telefone do cliente" />
-                    </div>
-                </div>
-
-                <div className="field is-grouped">
-                    <label className="label">Username</label>
-                    <div className="control has-icons-left has-icons-right">
-                        <input className="input is-success" type="text" placeholder="Text input" value="bulma" />
-                        <span className="icon is-small is-left">
-                            <i className="fas fa-user"></i>
-                        </span>
-                        <span className="icon is-small is-right">
-                            <i className="fas fa-check"></i>
-                        </span>
-                    </div>
-                    <p className="help is-success">This username is available</p>
-                </div>
-
-                <div className="field">
-                    <label className="label">Email</label>
-                    <div className="control has-icons-left has-icons-right">
-                        <input className="input is-danger" type="email" placeholder="Email input" value="hello@" />
-                        <span className="icon is-small is-left">
-                            <i className="fas fa-envelope"></i>
-                        </span>
-                        <span className="icon is-small is-right">
-                            <i className="fas fa-exclamation-triangle"></i>
-                        </span>
-                    </div>
-                    <p className="help is-danger">This email is invalid</p>
-                </div>
-
-                <div className="field">
-                    <label className="label">Subject</label>
                     <div className="control">
-                        <div className="select">
-                            <select>
-                                <option>Select dropdown</option>
-                                <option>With options</option>
-                            </select>
+                        <input className="input" type="text" placeholder="Nome" aria-label="Nome" onChange={(e) => setNome(e.target.value)} />
+                    </div>
+                </div>
+
+                <div className="field">
+                    <div className="control">
+                        <input className="input" type="text" placeholder="Nome social" aria-label="Nome social" onChange={(e) => setNomeSocial(e.target.value)} />
+                    </div>
+                </div>
+
+                <div className="field is-grouped">
+                    <div className="control is-expanded">
+                        <input className="input" type="text" placeholder="RG" aria-label="RG" onChange={(e) => setRG(e.target.value)} />
+                    </div>
+                    <div className="control">
+                        <span className="input">Data de Emissão</span>
+                    </div>
+                    <div className="control is-expanded">
+                        <input className="input" type="date" placeholder="Data de Emissão" aria-label="Data de Emissão" onChange={(e) => setRGemissao(e.target.value)} />
+                    </div>
+                </div>
+
+                <div className="field is-grouped">
+                    <div className="control is-expanded">
+                        <input className="input" type="text" placeholder="CPF" aria-label="CPF" onChange={(e) => setCPF(e.target.value)} />
+                    </div>
+                    <div className="control">
+                        <span className="input">Data de Emissão</span>
+                    </div>
+                    <div className="control is-expanded">
+                        <input className="input" type="date" placeholder="Data de Emissão" aria-label="Data de Emissão" onChange={(e) => setCPFemissao(e.target.value)} />
+                    </div>
+                </div>
+
+                <div className="field is-grouped">
+                    <div className="control is-expanded">
+                        <input className="input" type="text" placeholder="Passaporte" aria-label="Passaporte" onChange={(e) => setCPF(e.target.value)} />
+                    </div>
+                    <div className="control">
+                        <span className="input">Data de Emissão</span>
+                    </div>
+                    <div className="control is-expanded">
+                        <input className="input" type="date" placeholder="Data de Emissão" aria-label="Data de Emissão" onChange={(e) => setCPFemissao(e.target.value)} />
+                    </div>
+                </div>
+
+                <div className="field is-grouped">
+                    <div className="control is-expanded">
+                        <input className="input" type="text" placeholder="CNH" aria-label="CNH" onChange={(e) => setCPF(e.target.value)} />
+                    </div>
+                    <div className="control">
+                        <span className="input">Data de Emissão</span>
+                    </div>
+                    <div className="control is-expanded">
+                        <input className="input" type="date" placeholder="Data de Emissão" aria-label="Data de Emissão" onChange={(e) => setCPFemissao(e.target.value)} />
+                    </div>
+                </div>
+
+                <div className="field">
+                    <div className="control has-icons-left">
+                        <input className="input" type="text" placeholder="E-mail" aria-label="E-mail" onChange={(e) => setMail(e.target.value)} />
+                        <span className="icon is-small is-left">@</span>
+                    </div>
+                </div>
+
+                <div className="field is-grouped">
+                    <div className="control">
+                        <input className="input" type="text" placeholder="DDD" aria-label="DDD" onChange={(e) => setDDD(e.target.value)} />
+                    </div>
+                    <div className="control is-expanded">
+                        <input className="input" type="text" placeholder="Telefone" aria-label="Telefone" onChange={(e) => setTel(e.target.value)} />
+                    </div>
+                </div>
+
+                <div id={`collapseOne$`} className="accordion-content">
+                    <div className="accordion-body">
+                        <form className="columns is-multiline">
+                            <div className="field column is-half">
+                                <div className="control">
+                                    <input className="input" type="text" placeholder={"cliente.ddd"} aria-label="DDD" name='ddd' />
+                                </div>
+                            </div>
+                            <div className="field column is-half">
+                                <div className="control">
+                                    <input className="input" type="text" placeholder={"cliente.telefone"} aria-label="Telefone" name='tel' />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div className="columns">
+                    <div className="column">
+                        <div className="field">
+                            <div className="control">
+                                <button className="button is-outlined" type="submit" >Finalizar Cadastro de Cliente</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div className="field">
-                    <label className="label">Message</label>
-                    <div className="control">
-                        <textarea className="textarea" placeholder="Textarea"></textarea>
-                    </div>
-                </div>
-
-                <div className="field">
-                    <div className="control">
-                        <label className="checkbox">
-                            <input type="checkbox" />
-                            I agree to the <a href="#">terms and conditions</a>
-                        </label>
-                    </div>
-                </div>
-
-                <div className="field">
-                    <div className="control">
-                        <label className="radio">
-                            <input type="radio" name="question" />
-                            Yes
-                        </label>
-                        <label className="radio">
-                            <input type="radio" name="question" />
-                            No
-                        </label>
-                    </div>
-                </div>
-
-                <div className="field is-grouped">
-                    <div className="control">
-                        <button className="button is-link">Submit</button>
-                    </div>
-                    <div className="control">
-                        <button className="button is-link is-light">Cancel</button>
-                    </div>
-                </div>
-            </section>
+            </form>
 
         </>
 
