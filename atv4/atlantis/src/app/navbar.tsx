@@ -90,13 +90,13 @@ export default function Navbar() {
                             <a className="navbar-link">Acomodações</a>
                         </Link>
                         <div className="navbar-dropdown">
-                            <Link href="/acomodacoes/cadastrar" legacyBehavior>
+                            <Link href="/cadastrar/acomodacao" legacyBehavior>
                                 <a className="navbar-item">Cadastrar</a>
                             </Link>
-                            <Link href="/acomodacoes/deletar" legacyBehavior>
+                            <Link href="/acomodacao/deletar" legacyBehavior>
                                 <a className="navbar-item">Deletar</a>
                             </Link>
-                            <Link href="/acomodacoes/buscar" legacyBehavior>
+                            <Link href="/acomodacao/buscar" legacyBehavior>
                                 <a className="navbar-item">Buscar</a>
                             </Link>
                         </div>
