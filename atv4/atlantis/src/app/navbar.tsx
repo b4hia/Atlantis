@@ -55,25 +55,25 @@ export default function Navbar() {
                             <a className="navbar-link">Buscar Clientes</a>
                         </Link>
                         <div className="navbar-dropdown">
-                            <Link href="/buscar/todos-clientes" legacyBehavior>
+                            <Link href="/listar/cliente/todos" legacyBehavior>
                                 <a className="navbar-item">Todos os Clientes</a>
                             </Link>
-                            <Link href="/buscar/titular-cpf" legacyBehavior>
+                            <Link href="/listar/cliente/titular" legacyBehavior>
                                 <a className="navbar-item">Buscar um Titular pelo CPF</a>
                             </Link>
-                            <Link href="/buscar/todos-titulares" legacyBehavior>
+                            <Link href="/listar/cliente/todos/titular" legacyBehavior>
                                 <a className="navbar-item">Buscar Todos os Titulares</a>
                             </Link>
-                            <Link href="/buscar/titular-dependente" legacyBehavior>
+                            <Link href="/listar/cliente/titular/titular-dependente" legacyBehavior>
                                 <a className="navbar-item">Buscar o Titular de um Dependente</a>
                             </Link>
-                            <Link href="/buscar/dependente-cpf" legacyBehavior>
+                            <Link href="/listar/cliente/dependente" legacyBehavior>
                                 <a className="navbar-item">Buscar um Dependente pelo CPF</a>
                             </Link>
-                            <Link href="/buscar/todos-dependentes" legacyBehavior>
+                            <Link href="/listar/cliente/todos/dependente" legacyBehavior>
                                 <a className="navbar-item">Buscar Todos os Dependentes</a>
                             </Link>
-                            <Link href="/buscar/dependente-titular" legacyBehavior>
+                            <Link href="/listar/cliente/dependente/dependente-titular" legacyBehavior>
                                 <a className="navbar-item">Buscar o Dependente de um Titular</a>
                             </Link>
                         </div>
