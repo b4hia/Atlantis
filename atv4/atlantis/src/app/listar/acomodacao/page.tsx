@@ -13,7 +13,7 @@ export default function BuscarAcomodacao() {
                 <div className="field is-grouped is-full">
                     <div className="control">
                         <label className="label">Insira o número da Acomodação que deseja listar</label>
-                        <input className="input" type="text" placeholder="Número da Acomodação" aria-label="Nome Acomodação" />
+                        <input className="input" type="search" placeholder="Número da Acomodação" aria-label="Nome Acomodação" />
                     </div>
                 </div>
                 <div className="field is-grouped is-full">

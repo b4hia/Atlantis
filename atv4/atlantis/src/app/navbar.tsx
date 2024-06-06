@@ -23,7 +23,7 @@ export default function Navbar() {
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start">
                     <div className="navbar-item has-dropdown is-hoverable">
-                        <Link href="/" legacyBehavior>
+                        <Link href="" legacyBehavior>
                             <a className="navbar-link">Cadastrar Clientes</a>
                         </Link>
                         <div className="navbar-dropdown">
@@ -37,7 +37,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="navbar-item has-dropdown is-hoverable">
-                        <Link href="/" legacyBehavior>
+                        <Link href="" legacyBehavior>
                             <a className="navbar-link">Atualizar Dados</a>
                         </Link>
                         <div className="navbar-dropdown">
@@ -51,7 +51,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="navbar-item has-dropdown is-hoverable">
-                        <Link href="/" legacyBehavior>
+                        <Link href="" legacyBehavior>
                             <a className="navbar-link">Buscar Clientes</a>
                         </Link>
                         <div className="navbar-dropdown">
@@ -86,7 +86,7 @@ export default function Navbar() {
 
                 <div className="navbar-end">
                     <div className="navbar-item has-dropdown is-hoverable">
-                        <Link href="/" legacyBehavior>
+                        <Link href="" legacyBehavior>
                             <a className="navbar-link">Acomodações</a>
                         </Link>
                         <div className="navbar-dropdown">
