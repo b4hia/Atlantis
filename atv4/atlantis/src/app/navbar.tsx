@@ -41,10 +41,10 @@ export default function Navbar() {
                             <a className="navbar-link">Atualizar Dados</a>
                         </Link>
                         <div className="navbar-dropdown">
-                            <Link href="/atualizar/titular" legacyBehavior>
+                            <Link href="/atualizar/cliente/titular" legacyBehavior>
                                 <a className="navbar-item">Titular</a>
                             </Link>
-                            <Link href="/atualizar/dependente" legacyBehavior>
+                            <Link href="/atualizar/cliente/dependente" legacyBehavior>
                                 <a className="navbar-item">Dependente</a>
                             </Link>
                         </div>
@@ -79,7 +79,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Link href="/excluir-cliente" legacyBehavior>
+                    <Link href="/deletar/cliente" legacyBehavior>
                         <a className="navbar-item">Excluir Cliente</a>
                     </Link>
                 </div>
@@ -93,10 +93,10 @@ export default function Navbar() {
                             <Link href="/cadastrar/acomodacao" legacyBehavior>
                                 <a className="navbar-item">Cadastrar</a>
                             </Link>
-                            <Link href="/acomodacao/deletar" legacyBehavior>
+                            <Link href="/deletar/acomodacao" legacyBehavior>
                                 <a className="navbar-item">Deletar</a>
                             </Link>
-                            <Link href="/acomodacao/buscar" legacyBehavior>
+                            <Link href="/listar/acomodacao" legacyBehavior>
                                 <a className="navbar-item">Buscar</a>
                             </Link>
                         </div>

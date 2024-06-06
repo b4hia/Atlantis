@@ -8,7 +8,6 @@ export default function CadastroTitular() {
     const [rgdata, setRGemissao] = useState("")
     const [cpf, setCPF] = useState("")
     const [cpfdata, setCPFemissao] = useState("")
-    const [mail, setMail] = useState("")
     const [tel, setTel] = useState("")
     const [ddd, setDDD] = useState("")
     const [isOpen, setIsOpen] = useState(false);

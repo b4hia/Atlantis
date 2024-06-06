@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-export default function DeletarCliente() {
+export default function DeletarAcomodacao() {
 
     useEffect(() => {
         function closeModal($el: HTMLElement) {
@@ -30,7 +30,7 @@ export default function DeletarCliente() {
                 }
             }
         });
-
+        
         (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
             const $closeElement = $close as HTMLElement;
             const $target = $closeElement.closest('.modal') as HTMLElement;
@@ -52,33 +52,26 @@ export default function DeletarCliente() {
     return (
         <>
             <form className='container my-6'>
-                <p className="title is-3 is-spaced">Deletar Cliente</p>
-                <div className="field is-full my-6">
+                <p className="title is-3 is-spaced">Deletar Acomodação</p>
+                <div className="field is-grouped is-full">
                     <div className="control">
-                        <label className="label">Selecione um dos Cliente que deseja deletar</label>
                         <div className="select  is-expanded">
                             <select>
-                                <option>Selecione um Cliente</option>
-                                <option>Reinaldo Arakaki</option>
-                                <option>Gerson Penha</option>
-                                <option>Fernando Massanori</option>
-                                <option>Guiliano Bertoti</option>
+                                <option>Selecione uma Acomodação</option>
+                                <option>71 - Solteiro Simples</option>
+                                <option>08 - Solteiro Simples</option>
+                                <option>407 - Familia Super</option>
                             </select>
                         </div>
                     </div>
-                </div>
-                <div className="field is-grouped is-full">
                     <div className="control is-expanded">
-                        <label className="label">Nome Cliente</label>
-                        <input className="input" type="text" placeholder="Nome" aria-label="Nome" disabled />
+                        <input className="input" type="text" placeholder="Nome da Acomodação" aria-label="Nome Acomodação" disabled />
                     </div>
                     <div className="control is-expanded">
-                        <label className="label">Nome Social</label>
-                        <input className="input" type="text" placeholder="Nome Social" aria-label="Nome Social" disabled />
+                        <input className="input" type="text" placeholder="Setor da Acomodação" aria-label="Setor da Acomodação" disabled />
                     </div>
                     <div className="control">
-                        <label className="label">Data Nascimento</label>
-                        <input className="input" type="date" placeholder="Data Nascimento" aria-label="Data Nascimento" disabled />
+                        <input className="input" type="text" placeholder="Número da Acomodação" aria-label="Número da Acomodação" disabled />
                     </div>
                 </div>
 
@@ -87,7 +80,7 @@ export default function DeletarCliente() {
                         <div className="field">
                             <div className="control">
                                 <br></br>
-                                <button className="button is-danger js-modal-trigger" data-target="modal-deletar" type="submit" >Deletar Cliente</button>
+                                <button className="button is-danger js-modal-trigger" data-target="modal-deletar" type="submit" >Deletar Acomodação</button>
                             </div>
                         </div>
                     </div>
@@ -97,10 +90,10 @@ export default function DeletarCliente() {
                 <div className="modal-background"></div>
                 <div className="modal-card">
                     <header className="modal-card-head">
-                        <p className="modal-card-title">Deletar Cliente</p>
+                        <p className="modal-card-title">Deletar Acomodação</p>
                         <button className="delete" aria-label="close"></button>
                     </header>
-                    <section className='modal-card-body'> Tem certeza que deseja deletar o cliente?</section>
+                    <section className='modal-card-body'> Tem certeza que deseja deletar a Acomodação?</section>
                     <footer className="modal-card-foot">
                         <div className="buttons">
                             <button className="button is-success">Sim</button>
