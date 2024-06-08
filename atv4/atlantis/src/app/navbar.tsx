@@ -103,7 +103,7 @@ export default function Navbar() {
                     </div>
                     <div className="navbar-item">
                         <div className="buttons">
-                            <Link href="/alugar-acomodacao" legacyBehavior>
+                            <Link href="/alugar" legacyBehavior>
                                 <a className="button is-primary">
                                     <strong>Alugar Acomodação</strong>
                                 </a>
