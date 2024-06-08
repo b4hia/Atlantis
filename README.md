@@ -243,7 +243,7 @@ An important point, the navigable prototype must include all the functionalities
 <br>
 
 > 🔗 **Link** <br>
-> - Support documento for the atividade4: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/ativiv-atl.pdf)
+> - Support documento for the atividade4: [Click to view](https://github.com/b4hia/Atlantis/tree/main/documents/atviv-atl.pdf)
     
 <br>
   
